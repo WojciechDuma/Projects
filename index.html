@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Simple Projects</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>Projects</h1>
+    <div class="project">
+      <h2 class="project__name">Nazwa projektu</h2>
+      <p class="project__mainTechnology">CSS</p>
+      <a href="" class="project__github">View on github</a>
+      <a href="" class="project__preview">Preview</a>
+    </div>
+    <div class="project">
+      <h2 class="project__name">Nazwa projektu</h2>
+      <p class="project__mainTechnology">CSS</p>
+      <a href="" class="project__github">View on github</a>
+      <a href="" class="project__preview">Preview</a>
+    </div>
+    <div class="project">
+      <h2 class="project__name">Nazwa projektu</h2>
+      <p class="project__mainTechnology">CSS</p>
+      <a href="" class="project__github">View on github</a>
+      <a href="" class="project__preview">Preview</a>
+    </div>
+    <div class="project">
+      <h2 class="project__name">Nazwa projektu</h2>
+      <p class="project__mainTechnology">CSS</p>
+      <a href="" class="project__github">View on github</a>
+      <a href="" class="project__preview">Preview</a>
+    </div>
+    <div class="project">
+      <h2 class="project__name">Nazwa projektu</h2>
+      <p class="project__mainTechnology">CSS</p>
+      <a href="" class="project__github">View on github</a>
+      <a href="" class="project__preview">Preview</a>
+    </div>
+    <div class="project">
+      <h2 class="project__name">Nazwa projektu</h2>
+      <p class="project__mainTechnology">CSS</p>
+      <a href="" class="project__github">View on github</a>
+      <a href="" class="project__preview">Preview</a>
+    </div>
+    <div class="project">
+      <h2 class="project__name">Nazwa projektu</h2>
+      <p class="project__mainTechnology">CSS</p>
+      <a href="" class="project__github">View on github</a>
+      <a href="" class="project__preview">Preview</a>
+    </div>
+
+    <script>
+      document.querySelector("body").onmousemove = e => {
+        const x = e.pageX - e.target.offsetLeft;
+        const y = e.pageY - e.target.offsetTop;
+        e.target.style.setProperty("--x", `${x}px`);
+        e.target.style.setProperty("--y", `${y}px`);
+      };
+    </script>
+  </body>
+</html>
