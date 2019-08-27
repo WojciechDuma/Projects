@@ -16,7 +16,11 @@
     <div class="project">
       <h2 class="project__name">Gallery #1</h2>
       <p class="project__mainTechnology">CSS</p>
-      <a href="" class="project__github">View on github</a>
+      <a
+        href="https://github.com/WojciechDuma/Projects/tree/master/projects/Gallery_1"
+        class="project__github"
+        >View on github</a
+      >
       <a href="projects/Gallery_1/gallery_1.html" class="project__preview"
         >Preview</a
       >
@@ -58,13 +62,6 @@
       <a href="" class="project__preview">Preview</a>
     </div>
 
-    <script>
-      document.querySelector("body").onmousemove = e => {
-        const x = e.pageX - e.target.offsetLeft;
-        const y = e.pageY - e.target.offsetTop;
-        e.target.style.setProperty("--x", `${x}px`);
-        e.target.style.setProperty("--y", `${y}px`);
-      };
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
