@@ -1,4 +1,4 @@
-const showCertificates = () => {
+const showImage = () => {
     const allImg = [...document.querySelectorAll(".container img")];
     const show = document.querySelector(".show");
     const showImg = document.querySelector(".show img");
@@ -15,4 +15,4 @@ const showCertificates = () => {
     });
 };
 
-showCertificates();
+showImage();
