@@ -7,8 +7,6 @@
     width: 100%;
     height: auto;
     margin: 0 0 5px;
-    break-inside: avoid-column;
-    cursor: pointer;
 }
 
 @media(max-width: 1200px) {
