@@ -1,7 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister|Roboto:400,700&display=swap");
+.container {
+  background-color: #343D42;
+}
+
+.title {
+  margin: 20px auto;
+  color: white;
+  text-align: center;
+  font-size: 80px;
+  font-weight: normal;
+  font-family: 'Love Ya Like A Sister', cursive;
+}
+
 .format {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 50px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,8 +32,10 @@
 .format .format__block {
   width: 250px;
   max-width: 400px;
+  min-width: 150px;
   height: 130px;
   margin: 10px;
+  border-radius: 10px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -32,6 +48,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 3px 3px 7px red;
+          box-shadow: 3px 3px 7px red;
+  cursor: pointer;
   overflow: hidden;
 }
 
@@ -50,13 +69,46 @@
           align-items: center;
   color: white;
   font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.format .format__block:hover .format__size {
+  -webkit-transform: scale(1.4) rotate(25deg);
+          transform: scale(1.4) rotate(25deg);
 }
 
 .format--A .format__block {
-  background-color: #FFB238;
+  background-color: #5A9EDC;
 }
 
 .format--A .format__block .format__size {
+  background-color: #497EB1;
+}
+
+.format--B .format__block {
+  background-color: #127E32;
+}
+
+.format--B .format__block .format__size {
+  background-color: #0E6528;
+}
+
+.format--C .format__block {
+  background-color: #FFB238;
+}
+
+.format--C .format__block .format__size {
   background-color: #D1922E;
+}
+
+.format__block--click {
+  -webkit-transform: translate(3px, 3px);
+          transform: translate(3px, 3px);
+  -webkit-box-shadow: 0 0 5px red;
+          box-shadow: 0 0 5px red;
 }
 /*# sourceMappingURL=paper.css.map */
