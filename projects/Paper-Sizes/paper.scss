@@ -1,0 +1,42 @@
+.format {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .format__block {
+        width: 250px;
+        max-width: 400px;
+        height: 130px;
+        margin: 10px;
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        .format__size {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 30px;
+        }
+    }
+}
+
+.format--A {
+    .format__block {
+        background-color: #FFB238;
+
+        .format__size {
+            background-color: #D1922E;
+        }
+    }
+}
