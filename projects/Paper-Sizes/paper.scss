@@ -53,9 +53,90 @@
         }
     }
 
-    .format__block:hover .format__size {
-        transform: scale(1.4) rotate(25deg);
+    .format__block--click {
+        transform: translate(3px, 3px);
+        box-shadow: 0 0 5px red;
     }
+
+    .format__popup {
+        display: none;
+    }
+
+    .format__popup--active {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+        cursor: default;
+    }
+}
+
+.popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+    border: 3px solid black;
+    border-radius: 100px 0;
+    color: black;
+    background-color: mintcream;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+
+    .popup__size {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 250px;
+        height: 150px;
+        text-align: center;
+        color: white;
+        background-color: #5A9EDC;
+    }
+
+    .popup__info {
+        font-style: italic;
+        text-align: center;
+    }
+
+    .popup__dimension {
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    .popup__close {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        margin: 0;
+        width: 50px;
+        height: 50px;
+        line-height: 45px;
+        border-radius: 50%;
+        border: 3px solid white;
+        background-color: black;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .popup__close:hover {
+        transform: rotate(180deg);
+    }
+}
+
+.format__block:hover .format__size {
+    transform: scale(1.4) rotate(25deg);
 }
 
 .format--A {
@@ -86,9 +167,4 @@
             background-color: #D1922E;
         }
     }
-}
-
-.format__block--click {
-    transform: translate(3px, 3px);
-    box-shadow: 0 0 5px red;
 }
