@@ -148,7 +148,6 @@
   height: 150px;
   text-align: center;
   color: white;
-  background-color: #5A9EDC;
 }
 
 .popup .popup__info {
@@ -233,6 +232,10 @@
   background-color: #497EB1;
 }
 
+.format--A .format__popup .popup .popup__size {
+  background-color: #5A9EDC;
+}
+
 .format--B .format__block {
   background-color: #127E32;
 }
@@ -241,11 +244,19 @@
   background-color: #0E6528;
 }
 
+.format--B .format__popup .popup .popup__size {
+  background-color: #127E32;
+}
+
 .format--C .format__block {
   background-color: #FFB238;
 }
 
 .format--C .format__block .format__size {
   background-color: #D1922E;
+}
+
+.format--C .format__popup .popup .popup__size {
+  background-color: #FFB238;
 }
 /*# sourceMappingURL=paper.css.map */

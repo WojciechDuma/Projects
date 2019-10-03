@@ -106,7 +106,6 @@
         height: 150px;
         text-align: center;
         color: white;
-        background-color: #5A9EDC;
     }
 
     .popup__info {
@@ -178,6 +177,14 @@
             background-color: #497EB1;
         }
     }
+
+    .format__popup {
+        .popup {
+            .popup__size {
+                background-color: #5A9EDC;
+            }
+        }
+    }
 }
 
 .format--B {
@@ -188,6 +195,14 @@
             background-color: #0E6528;
         }
     }
+
+    .format__popup {
+        .popup {
+            .popup__size {
+                background-color: #127E32;
+            }
+        }
+    }
 }
 
 .format--C {
@@ -196,6 +211,14 @@
 
         .format__size {
             background-color: #D1922E;
+        }
+    }
+
+    .format__popup {
+        .popup {
+            .popup__size {
+                background-color: #FFB238;
+            }
         }
     }
 }
