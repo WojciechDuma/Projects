@@ -17,12 +17,12 @@
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 1320px;
-  margin: 130px auto 50px;
+  margin: 10px auto 50px;
 }
 
 .btn__title {
-  position: absolute;
-  top: 0;
+  width: 100%;
+  text-align: center;
   font-family: 'Bungee Shade', cursive;
   font-size: 50px;
   color: white;
@@ -50,6 +50,7 @@
   background-color: black;
   color: white;
   border: none;
+  outline: none;
   font-family: 'Bungee Shade', cursive;
   font-size: 30px;
   cursor: pointer;
