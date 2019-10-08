@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister|Roboto:400,700&display=swap');
+
+.container {
+    background-color: #343D42;
+}
+
+.title {
+    margin: 20px auto;
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    font-weight: normal;
+    font-family: 'Love Ya Like A Sister', cursive;
+}
+
+.format {
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .format__block {
+        width: 250px;
+        max-width: 400px;
+        min-width: 150px;
+        height: 130px;
+        margin: 10px;
+        border-radius: 10px;
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 3px 3px 7px red;
+        cursor: pointer;
+        overflow: hidden;
+
+        .format__size {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 30px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            letter-spacing: 2px;
+            transition: 0.5s;
+        }
+    }
+
+    .format__block--click {
+        transform: translate(3px, 3px);
+        box-shadow: 0 0 5px red;
+    }
+}
+
+.format__popup {
+    display: none;
+}
+
+.format__popup--active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    cursor: default;
+
+    @media(max-height: 500px) {
+        overflow-y: scroll;
+    }
+}
+
+.popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    min-width: 360px;
+    max-width: 1000px;
+    height: 70%;
+    border: 3px solid black;
+    border-radius: 100px 0;
+    color: black;
+    background-color: mintcream;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+
+    .popup__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 30px;
+        width: 250px;
+        height: 150px;
+        text-align: center;
+        color: white;
+
+        .popup__size,
+        .popup__dimension--generall {
+            margin: 10px;
+        }
+    }
+
+    .popup__info {
+        text-align: center;
+        margin: 20px;
+    }
+
+    .popup__close {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        margin: 0;
+        width: 50px;
+        height: 50px;
+        line-height: 45px;
+        border-radius: 50%;
+        border: 3px solid white;
+        background-color: black;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .popup__close:hover {
+        transform: rotate(180deg);
+    }
+
+    @media(max-width: 768px) {
+        font-size: 25px;
+    }
+
+    @media(max-width: 640px) {
+        width: 80%;
+    }
+
+    @media(max-width: 500px) {
+        width: 95%;
+        font-size: 22px;
+    }
+
+    @media(max-height: 700px) {
+        height: 95%;
+    }
+
+    @media(max-height: 500px) {
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: unset;
+    }
+}
+
+.format__block:hover .format__size {
+    transform: scale(1.4) rotate(25deg);
+}
+
+.format--A {
+    .format__block {
+        background-color: #5A9EDC;
+
+        .format__size {
+            background-color: #497EB1;
+        }
+    }
+}
+
+.format--B {
+    .format__block {
+        background-color: #127E32;
+
+        .format__size {
+            background-color: #0E6528;
+        }
+    }
+}
+
+.format--C {
+    .format__block {
+        background-color: #FFB238;
+
+        .format__size {
+            background-color: #D1922E;
+        }
+    }
+}
