@@ -1,0 +1,133 @@
+/* General */
+body {
+  background-color: #403F4C;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  max-width: 1300px;
+  min-width: 400px;
+  margin: 30px auto;
+}
+
+.loader-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  color: white;
+  font-size: 35px;
+  font-family: verdana, serif;
+  font-style: italic;
+  letter-spacing: 5px;
+}
+
+.loader-container {
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+  border: 3px solid white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.loader-container:hover {
+  border-color: #296DCF;
+}
+
+/* Loader #1 */
+.loader-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 96px;
+}
+
+.loader-1 > span {
+  width: 30px;
+  height: 30px;
+  background-color: #296DCF;
+  margin: 1px;
+  -webkit-animation: square 0.8s infinite alternate;
+          animation: square 0.8s infinite alternate;
+}
+
+.loader-1 > span:nth-child(2) {
+  background-color: #569BFC;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.loader-1 > span:nth-child(3) {
+  background-color: #8EBCFD;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.loader-1 > span:nth-child(4) {
+  background-color: #569BFC;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.loader-1 > span:nth-child(5) {
+  background-color: #8EBCFD;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.loader-1 > span:nth-child(6) {
+  background-color: #569BFC;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.loader-1 > span:nth-child(7) {
+  background-color: #8EBCFD;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.loader-1 > span:nth-child(8) {
+  background-color: #569BFC;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.loader-1 > span:nth-child(9) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+@-webkit-keyframes square {
+  100% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+}
+
+@keyframes square {
+  100% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+}
+/*# sourceMappingURL=loader.css.map */

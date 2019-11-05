@@ -1,0 +1,102 @@
+/* General */
+body {
+    background-color: #403F4C;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    max-width: 1300px;
+    min-width: 400px;
+    margin: 30px auto;
+}
+
+.loader-title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    font-size: 35px;
+    font-family: verdana, serif;
+    font-style: italic;
+    letter-spacing: 5px;
+}
+
+.loader-container {
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    border: 3px solid white;
+    transition: 0.5s;
+
+    &:hover {
+        border-color: #296DCF;
+    }
+}
+
+/* Loader #1 */
+
+.loader-1 {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 96px;
+
+    &>span {
+        width: 30px;
+        height: 30px;
+        background-color: #296DCF;
+        margin: 1px;
+        animation: square 0.8s infinite alternate;
+    }
+
+    &>span:nth-child(2) {
+        background-color: #569BFC;
+        animation-delay: 0.1s;
+    }
+
+    &>span:nth-child(3) {
+        background-color: #8EBCFD;
+        animation-delay: 0.2s;
+    }
+
+    &>span:nth-child(4) {
+        background-color: #569BFC;
+        animation-delay: 0.1s;
+    }
+
+    &>span:nth-child(5) {
+        background-color: #8EBCFD;
+        animation-delay: 0.2s;
+    }
+
+    &>span:nth-child(6) {
+        background-color: #569BFC;
+        animation-delay: 0.3s;
+    }
+
+    &>span:nth-child(7) {
+        background-color: #8EBCFD;
+        animation-delay: 0.2s;
+    }
+
+    &>span:nth-child(8) {
+        background-color: #569BFC;
+        animation-delay: 0.3s;
+    }
+
+    &>span:nth-child(9) {
+        animation-delay: 0.4s;
+    }
+}
+
+@keyframes square {
+    100% {
+        transform: scale(0.4);
+    }
+}
