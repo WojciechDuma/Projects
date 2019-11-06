@@ -66,8 +66,8 @@ body {
   height: 30px;
   background-color: #296DCF;
   margin: 1px;
-  -webkit-animation: square 0.8s infinite alternate;
-          animation: square 0.8s infinite alternate;
+  -webkit-animation: loader-1 0.8s infinite alternate;
+          animation: loader-1 0.8s infinite alternate;
 }
 
 .loader-1 > span:nth-child(2) {
@@ -117,14 +117,14 @@ body {
           animation-delay: 0.4s;
 }
 
-@-webkit-keyframes square {
+@-webkit-keyframes loader-1 {
   100% {
     -webkit-transform: scale(0.4);
             transform: scale(0.4);
   }
 }
 
-@keyframes square {
+@keyframes loader-1 {
   100% {
     -webkit-transform: scale(0.4);
             transform: scale(0.4);
@@ -156,8 +156,8 @@ body {
   border-radius: 20%;
   margin: 5px;
   background-color: #296DCF;
-  -webkit-animation: loader-1 2.4s linear infinite;
-          animation: loader-1 2.4s linear infinite;
+  -webkit-animation: loader-2 2.4s linear infinite;
+          animation: loader-2 2.4s linear infinite;
 }
 
 .loader-2 > span:nth-last-child(2) {
@@ -172,7 +172,7 @@ body {
           animation-delay: 1.6s;
 }
 
-@-webkit-keyframes loader-1 {
+@-webkit-keyframes loader-2 {
   0% {
     left: 0;
     top: 0;
@@ -211,7 +211,7 @@ body {
   }
 }
 
-@keyframes loader-1 {
+@keyframes loader-2 {
   0% {
     left: 0;
     top: 0;
