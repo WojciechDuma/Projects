@@ -122,7 +122,7 @@ body {
         border-radius: 20%;
         margin: 5px;
         background-color: #296DCF;
-        animation: loader-2 2.4s linear infinite;
+        animation: loader-2-3 2.4s linear infinite;
     }
 
     &>span:nth-last-child(2) {
@@ -136,7 +136,48 @@ body {
     }
 }
 
-@keyframes loader-2 {
+/* Loader #3 */
+
+.loader-3 {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &>span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 20%;
+        margin: 5px;
+        background-color: #296DCF;
+        animation: loader-2-3 3.2s linear infinite;
+    }
+
+    &>span:nth-last-child(2) {
+        background-color: #569BFC;
+        animation-delay: 0.8s;
+
+    }
+
+    &>span:nth-last-child(3) {
+        background-color: #296DCF;
+        animation-delay: 1.6s;
+    }
+
+    &>span:nth-last-child(4) {
+        background-color: #569BFC;
+        animation-delay: 2.4s;
+    }
+}
+
+@keyframes loader-2-3 {
     0% {
         left: 0;
         top: 0;

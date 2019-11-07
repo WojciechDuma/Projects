@@ -156,8 +156,8 @@ body {
   border-radius: 20%;
   margin: 5px;
   background-color: #296DCF;
-  -webkit-animation: loader-2 2.4s linear infinite;
-          animation: loader-2 2.4s linear infinite;
+  -webkit-animation: loader-2-3 2.4s linear infinite;
+          animation: loader-2-3 2.4s linear infinite;
 }
 
 .loader-2 > span:nth-last-child(2) {
@@ -172,7 +172,54 @@ body {
           animation-delay: 1.6s;
 }
 
-@-webkit-keyframes loader-2 {
+/* Loader #3 */
+.loader-3 {
+  width: 80px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.loader-3 > span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 20%;
+  margin: 5px;
+  background-color: #296DCF;
+  -webkit-animation: loader-2-3 3.2s linear infinite;
+          animation: loader-2-3 3.2s linear infinite;
+}
+
+.loader-3 > span:nth-last-child(2) {
+  background-color: #569BFC;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.loader-3 > span:nth-last-child(3) {
+  background-color: #296DCF;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.loader-3 > span:nth-last-child(4) {
+  background-color: #569BFC;
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+}
+
+@-webkit-keyframes loader-2-3 {
   0% {
     left: 0;
     top: 0;
@@ -211,7 +258,7 @@ body {
   }
 }
 
-@keyframes loader-2 {
+@keyframes loader-2-3 {
   0% {
     left: 0;
     top: 0;
