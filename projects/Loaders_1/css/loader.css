@@ -16,6 +16,7 @@ body {
   max-width: 1300px;
   min-width: 400px;
   margin: 30px auto;
+  counter-reset: loaderCounter;
 }
 
 .loader-title {
@@ -40,6 +41,19 @@ body {
   border: 3px solid white;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.loader-container p {
+  position: absolute;
+  margin-left: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  color: lightblue;
+}
+
+.loader-container p::after {
+  counter-increment: loaderCounter;
+  content: counter(loaderCounter);
 }
 
 .loader-container:hover {
