@@ -869,3 +869,54 @@ body {
         background-color: #296DCF;
     }
 }
+
+/* Loader #7 */
+
+.loader-7 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    border: 10px solid #296DCF;
+    overflow: hidden;
+
+    div {
+        display: block;
+        background-color: #8EBCFD;
+        width: 100px;
+        height: 100px;
+        animation: loader-7 4s ease-in-out infinite;
+    }
+}
+
+@keyframes loader-7 {
+    25% {
+        transform: translateY(100%);
+    }
+
+    25.001% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateX(100%);
+    }
+
+    50.001% {
+        transform: translateX(0);
+    }
+
+    75% {
+        transform: translateY(-100%);
+    }
+
+    75.001% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
