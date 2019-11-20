@@ -1527,4 +1527,311 @@ body {
             transform: rotate(360deg);
   }
 }
+
+/* Loader #10 */
+.loader-10 {
+  position: relative;
+  top: 37.5%;
+  left: 37.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: loaderDiv 3s linear infinite;
+          animation: loaderDiv 3s linear infinite;
+}
+
+.loader-10 span {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-animation: loaderSpan 3s linear infinite;
+          animation: loaderSpan 3s linear infinite;
+}
+
+.loader-10 span:nth-child(1) {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-animation: loaderSpan_1 3s linear infinite;
+          animation: loaderSpan_1 3s linear infinite;
+}
+
+@-webkit-keyframes loaderDiv {
+  5% {
+    -webkit-transform: rotate(80deg);
+            transform: rotate(80deg);
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  30% {
+    -webkit-transform: rotate(170deg);
+            transform: rotate(170deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  55% {
+    -webkit-transform: rotate(260deg);
+            transform: rotate(260deg);
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  80% {
+    -webkit-transform: rotate(350deg);
+            transform: rotate(350deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loaderDiv {
+  5% {
+    -webkit-transform: rotate(80deg);
+            transform: rotate(80deg);
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  30% {
+    -webkit-transform: rotate(170deg);
+            transform: rotate(170deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  55% {
+    -webkit-transform: rotate(260deg);
+            transform: rotate(260deg);
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  80% {
+    -webkit-transform: rotate(350deg);
+            transform: rotate(350deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes loaderSpan_1 {
+  6% {
+    background-color: #296DCF;
+  }
+  20% {
+    background-color: #296DCF;
+  }
+  31% {
+    background-color: #569BFC;
+  }
+  45% {
+    background-color: #569BFC;
+  }
+  56% {
+    background-color: #8EBCFD;
+  }
+  70% {
+    background-color: #8EBCFD;
+  }
+  81% {
+    background-color: #fff;
+  }
+  95% {
+    background-color: #fff;
+  }
+}
+
+@keyframes loaderSpan_1 {
+  6% {
+    background-color: #296DCF;
+  }
+  20% {
+    background-color: #296DCF;
+  }
+  31% {
+    background-color: #569BFC;
+  }
+  45% {
+    background-color: #569BFC;
+  }
+  56% {
+    background-color: #8EBCFD;
+  }
+  70% {
+    background-color: #8EBCFD;
+  }
+  81% {
+    background-color: #fff;
+  }
+  95% {
+    background-color: #fff;
+  }
+}
+
+@-webkit-keyframes loaderSpan {
+  5% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    background-color: #296DCF;
+  }
+  10% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  20% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    background-color: #296DCF;
+  }
+  30% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    background-color: #569BFC;
+  }
+  35% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    background-color: #569BFC;
+  }
+  55% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    background-color: #8EBCFD;
+  }
+  60% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  75% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    background-color: #8EBCFD;
+  }
+  80% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    background-color: #fff;
+  }
+  85% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  95% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    background-color: #fff;
+  }
+}
+
+@keyframes loaderSpan {
+  5% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    background-color: #296DCF;
+  }
+  10% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  20% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    background-color: #296DCF;
+  }
+  30% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    background-color: #569BFC;
+  }
+  35% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    background-color: #569BFC;
+  }
+  55% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    background-color: #8EBCFD;
+  }
+  60% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  75% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    background-color: #8EBCFD;
+  }
+  80% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    background-color: #fff;
+  }
+  85% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  95% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    background-color: #fff;
+  }
+}
 /*# sourceMappingURL=loader.css.map */
