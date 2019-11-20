@@ -938,7 +938,7 @@ body {
         width: 50px;
         height: 50px;
         background-color: #fff;
-        animation: span 1s linear infinite;
+        animation: loader-8 1s linear infinite;
     }
 
     span:nth-child(2) {
@@ -954,7 +954,7 @@ body {
     }
 }
 
-@keyframes span {
+@keyframes loader-8 {
     25% {
         background-color: #296DCF;
     }
@@ -969,5 +969,47 @@ body {
 
     100% {
         background-color: white;
+    }
+}
+
+/* Loader #9 */
+
+.loader-9 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        width: 80px;
+        height: 80px;
+        background-color: #8EBCFD;
+        border: 10px solid #296DCF;
+        animation: loader-9 1s linear infinite;
+    }
+}
+
+@keyframes loader-9 {
+    40% {
+        border-radius: 50%;
+        transform: rotate(220deg) scale(0.7);
+    }
+
+    60% {
+        border-radius: 50%;
+        transform: rotate(220deg) scale(0.7);
+    }
+
+    90% {
+        border-radius: 0;
+        transform: rotate(360deg);
+    }
+
+    100% {
+        border-radius: 0;
+        transform: rotate(360deg);
     }
 }

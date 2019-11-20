@@ -1406,8 +1406,8 @@ body {
   width: 50px;
   height: 50px;
   background-color: #fff;
-  -webkit-animation: span 1s linear infinite;
-          animation: span 1s linear infinite;
+  -webkit-animation: loader-8 1s linear infinite;
+          animation: loader-8 1s linear infinite;
 }
 
 .loader-8 span:nth-child(2) {
@@ -1425,7 +1425,7 @@ body {
           animation-delay: 0.5s;
 }
 
-@-webkit-keyframes span {
+@-webkit-keyframes loader-8 {
   25% {
     background-color: #296DCF;
   }
@@ -1440,7 +1440,7 @@ body {
   }
 }
 
-@keyframes span {
+@keyframes loader-8 {
   25% {
     background-color: #296DCF;
   }
@@ -1452,6 +1452,79 @@ body {
   }
   100% {
     background-color: white;
+  }
+}
+
+/* Loader #9 */
+.loader-9 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loader-9 span {
+  width: 80px;
+  height: 80px;
+  background-color: #8EBCFD;
+  border: 10px solid #296DCF;
+  -webkit-animation: loader-9 1s linear infinite;
+          animation: loader-9 1s linear infinite;
+}
+
+@-webkit-keyframes loader-9 {
+  40% {
+    border-radius: 50%;
+    -webkit-transform: rotate(220deg) scale(0.7);
+            transform: rotate(220deg) scale(0.7);
+  }
+  60% {
+    border-radius: 50%;
+    -webkit-transform: rotate(220deg) scale(0.7);
+            transform: rotate(220deg) scale(0.7);
+  }
+  90% {
+    border-radius: 0;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    border-radius: 0;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-9 {
+  40% {
+    border-radius: 50%;
+    -webkit-transform: rotate(220deg) scale(0.7);
+            transform: rotate(220deg) scale(0.7);
+  }
+  60% {
+    border-radius: 50%;
+    -webkit-transform: rotate(220deg) scale(0.7);
+            transform: rotate(220deg) scale(0.7);
+  }
+  90% {
+    border-radius: 0;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    border-radius: 0;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 /*# sourceMappingURL=loader.css.map */
