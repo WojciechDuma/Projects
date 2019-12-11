@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Kalam:400,700|Righteous&display=swap');
+
+:root {
+    width: 700px;
+    margin: 0 auto;
+    background-image: url(frame.png);
+    background-repeat: no-repeat;
+    background-size: 700px 800px;
+    background-position: center 50px;
+    background-color: #aaa;
+}
+
+html {
+    font-size: 20px;
+    font-family: 'Righteous', cursive;
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.menu {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-family: 'Kalam', cursive;
+    line-height: 160%;
+    padding: 20px 10px;
+    cursor: pointer;
+    letter-spacing: 3px;
+}
+
+li::before {
+    content: '\1F355';
+    margin-left: -50px;
+    padding-right: 40px;
+}
+
+.active {
+    font-weight: bold;
+    color: royalblue;
+}
+
+.disabled {
+    color: grey;
+}
