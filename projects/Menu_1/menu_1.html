@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu #1</title>
+
+    <link rel="stylesheet" href="menu_1.css">
+</head>
+
+<body>
+    <nav>
+        <button class="hamburger" aria-expanded="false">
+            <span class="hamburger__box">
+                <span class="hamburger__line"></span>
+            </span>
+        </button>
+
+        <div class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link">First</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Second</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Third</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Fourth</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Fifth</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="info">
+        <h1>Info:</h1>
+        <p>1. "aria-expanded" przyjmuje dwie wartości: false, gdy menu jest zwinięte oraz true gdy menu jest rozwinięte.
+        </p>
+        <p>2. hamburger.setAttribute('aria-expanded', hamburger.classList.contains('hamburger--active')); - ta linika w
+            js,
+            zapewnia nam zmianę z false na true, gdy 'hamburger' zawiera klasę 'hamburger--active' (czyli menu jest
+            rozwinięte), zwraca nam true, dzięki czemu setAttribute ustawia aria-expended na true.</p>
+        <p>3. Do zwiniętej nawigacji dodajemy visibility: hidden, a do rozwiniętej nawigacji visibility: visible.
+            Animujmemy to potem w transformie. Rozwiązanie to naprawia problem ze schowanym menu, które cały czas jest i
+            tak dostępne z poziomu klawiatury mimo, że na ekranie go nie widzimy. Naciskająć Tab przeskakiwalibyśmy po
+            niewidocznych linkach menu, natomiast dzięki zastosowaniu visibility ten problem znika.</p>
+    </div>
+
+    <script src="menu_1.js"></script>
+</body>
+
+</html>
