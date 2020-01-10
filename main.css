@@ -6,9 +6,9 @@
 
 html {
   font-size: 10px;
-  --colorDark: #545e75;
+  --colorDark: #444;
   --colorWhite: #dee5e5;
-  --colorBlack: #1b1b1e;
+  --colorBlack: #333;
   --lightBlue: #b9d6f2;
   --middleBlue: #3e92cc;
   --darkBlue: #1b4079;
@@ -154,4 +154,23 @@ h1 {
 .project__prieview--disabled::after,
 .project__prieview--disabled::before {
   content: none;
+}
+
+footer {
+  grid-column: 1/-1;
+
+  /* position: absolute;
+  left: 0;
+  bottom: 0; */
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
+  background-color: var(--colorBlack);
+  color: var(--colorWhite);
+  font-size: 2rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--colorWhite);
 }
