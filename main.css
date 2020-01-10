@@ -87,7 +87,7 @@ h1 {
   font-style: italic;
   font-size: 1.5rem;
   font-weight: bold;
-  border-radius: 15px 0;
+  border-radius: 10px;
   box-shadow: 1px 1px 5px var(--colorBlack);
   background-color: var(--lightBlue);
   color: var(--colorBlack);
@@ -144,4 +144,14 @@ h1 {
 
 .project__preview:hover {
   font-size: 1.6rem;
+}
+
+.project__prieview--disabled {
+  background-color: #222;
+  color: #888;
+}
+
+.project__prieview--disabled::after,
+.project__prieview--disabled::before {
+  content: none;
 }
