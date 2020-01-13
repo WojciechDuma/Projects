@@ -1,0 +1,10 @@
+body {
+    background: radial-gradient(circle, rgba(5, 82, 180, 1) 15%, rgba(0, 15, 32, 1) 85%);
+}
+
+#root {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
