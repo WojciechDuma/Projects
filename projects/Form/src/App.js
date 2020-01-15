@@ -19,10 +19,10 @@ class App extends Component {
 
   messages = {
     username_incorrect:
-      "Nazwa musi być dłuższa niż 8 znaków i nie zawierać spacji.",
-    email_incorrect: "Brak @ w emailu",
-    password_incorrect: "Hasło musi mieć 8 znaków",
-    accept_inncorect: "Nie zaakceptowano regulaminu"
+      "Nazwa musi być dłuższa niż 5 znaków i nie zawierać spacji!",
+    email_incorrect: "Brak @ w emailu!",
+    password_incorrect: "Hasło musi miec minimum 8 znaków",
+    accept_inncorect: "Nie zaakceptowano regulaminu!"
   };
 
   handleChange = e => {
@@ -46,7 +46,6 @@ class App extends Component {
     e.preventDefault();
 
     const validation = this.formValidation();
-    console.log(validation);
 
     if (validation.formCorrect) {
       this.setState({
@@ -54,7 +53,7 @@ class App extends Component {
         email: "",
         password: "",
         accept: false,
-        messageForm: "Formularz został wysłany",
+        messageForm: "Formularz został wysłany! :)",
         error: {
           username: false,
           email: false,
@@ -77,7 +76,7 @@ class App extends Component {
   };
 
   formValidation = () => {
-    // true: okay, false: error
+    // true: okay, false: not okay
 
     let username = false;
     let email = false;
@@ -98,7 +97,7 @@ class App extends Component {
       email = true;
     }
 
-    if (this.state.password.length === 8) {
+    if (this.state.password.length >= 8) {
       password = true;
     }
 
@@ -119,7 +118,7 @@ class App extends Component {
     };
   };
 
-  // usunięcie wiadomości po 3s
+  // Usunięcie wiadomości (o wysłanym formularzu) po 3s.
   componentDidUpdate() {
     if (this.state.messageForm !== "") {
       setTimeout(
@@ -136,49 +135,58 @@ class App extends Component {
     return (
       <div className="App">
         <form onSubmit={this.handleSubmit} noValidate>
-          <label htmlFor="user">
+          <label htmlFor="user" className="label__name">
             Twoje imię:
-            <input
-              type="text"
-              id="user"
-              name="username"
-              value={this.state.username}
-              onChange={this.handleChange}
-            />
+          </label>
+          <input
+            type="text"
+            id="user"
+            name="username"
+            value={this.state.username}
+            onChange={this.handleChange}
+            className="input__name"
+          />
+          <p>
             {this.state.error.username && (
               <span>{this.messages.username_incorrect}</span>
             )}
-          </label>
+          </p>
 
-          <label htmlFor="email">
-            Twój adres email:
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={this.state.email}
-              onChange={this.handleChange}
-            />
+          <label htmlFor="email" className="label__email">
+            Twój email:
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={this.state.email}
+            onChange={this.handleChange}
+            className="input__email"
+          />
+          <p>
             {this.state.error.email && (
               <span>{this.messages.email_incorrect}</span>
             )}
-          </label>
+          </p>
 
-          <label htmlFor="password">
+          <label htmlFor="password" className="label__pass">
             Twoje hasło:
-            <input
-              type="password"
-              id="password"
-              name="password"
-              value={this.state.password}
-              onChange={this.handleChange}
-            />
+          </label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            value={this.state.password}
+            onChange={this.handleChange}
+            className="input__pass"
+          />
+          <p>
             {this.state.error.password && (
               <span>{this.messages.password_incorrect}</span>
             )}
-          </label>
+          </p>
 
-          <label htmlFor="accept">
+          <label htmlFor="accept" className="accept">
             <input
               type="checkbox"
               name="accept"
@@ -187,12 +195,14 @@ class App extends Component {
               onChange={this.handleChange}
             />
             Zgadzam się z regulaminem
+          </label>
+          <p>
             {this.state.error.accept && (
               <span>{this.messages.accept_inncorect}</span>
             )}
-          </label>
+          </p>
 
-          <button>Submit</button>
+          <button>Wyślij</button>
         </form>
         {this.state.messageForm && <h3>{this.state.messageForm}</h3>}
       </div>
