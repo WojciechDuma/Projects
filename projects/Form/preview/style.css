@@ -1,0 +1,70 @@
+form {
+    width: 600px;
+    margin: 50px auto;
+    padding: 30px 50px;
+    border: 5px solid #222;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.label__name,
+.label__email,
+.label__pass {
+    width: 20%;
+    line-height: 30px;
+}
+
+.input__name,
+.input__email,
+.input__pass {
+    width: 60%;
+    height: 30px;
+    font-size: 20px;
+}
+
+.accept {
+    cursor: pointer;
+}
+
+.accept input {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+button {
+    width: 50%;
+    height: 50px;
+    margin: 50px auto 0;
+    font-size: 30px;
+    font-style: italic;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #222;
+    color: white;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: white;
+    color: #222;
+    border: 2px solid #222;
+    /* font-weight: bold; */
+}
+
+p {
+    width: 100%;
+    font-size: 15px;
+    color: red;
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: limegreen;
+}
