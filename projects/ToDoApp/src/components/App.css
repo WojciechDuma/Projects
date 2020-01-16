@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+}
+
+.container {
+  background-color: #fff;
+  width: 700px;
+  min-height: 80vh;
+  margin: 50px auto;
+  border: 3px solid cornflowerblue;
+  font-family: arial;
+}
+
+.addTask {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-bottom: 3px solid cornflowerblue;
+  padding: 20px;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.addTask .task {
+  width: 70%;
+  height: 50px;
+  margin: 0 auto;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.addTask .important {
+  margin: 0 auto;
+  width: 40%;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.addTask .important input {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+.addTask .date input {
+  width: 250px;
+  height: 50px;
+  margin-left: 20px;
+  padding-left: 20px;
+  font-size: 25px;
+}
+
+.addTask button {
+  width: 40%;
+  height: 50px;
+  margin: 30px auto 0;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid #222;
+  outline: none;
+  background-color: white;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #222;
+  color: white;
+}

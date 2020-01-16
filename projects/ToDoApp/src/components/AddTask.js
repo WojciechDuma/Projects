@@ -65,8 +65,7 @@ class AddTask extends Component {
             onChange={this.handleCheck}
           />
         </label>
-        <br />
-        <label htmlFor="date">
+        <label htmlFor="date" className="date">
           Do kiedy wykonać zadanie:
           <input
             type="date"
