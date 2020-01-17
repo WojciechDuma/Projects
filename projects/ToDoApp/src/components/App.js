@@ -4,7 +4,7 @@ import TaskList from "./TaskList";
 import "./App.css";
 
 class App extends Component {
-  counter = 5;
+  counter = 3;
 
   state = {
     tasks: [
