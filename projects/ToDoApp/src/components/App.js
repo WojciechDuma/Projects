@@ -10,7 +10,7 @@ class App extends Component {
     tasks: [
       {
         id: 0,
-        text: "Grać w grę",
+        text: "Learn React",
         date: "2020-01-31",
         important: true,
         active: true,
@@ -18,35 +18,19 @@ class App extends Component {
       },
       {
         id: 1,
-        text: "Pierwszy",
-        date: "2019-01-31",
+        text: "Learn JavaScript",
+        date: "2020-01-01",
         important: false,
-        active: true,
-        finishDate: null
+        active: false,
+        finishDate: "2020-01-01"
       },
       {
         id: 2,
-        text: "Drugie",
-        date: "2021-01-31",
+        text: "Learn CSS",
+        date: "2020-01-01",
         important: true,
         active: false,
-        finishDate: null
-      },
-      {
-        id: 3,
-        text: "Trzeci",
-        date: "2022-01-31",
-        important: false,
-        active: false,
-        finishDate: null
-      },
-      {
-        id: 4,
-        text: "Kolejny",
-        date: "2023-01-31",
-        important: true,
-        active: true,
-        finishDate: null
+        finishDate: "2020-01-01"
       }
     ]
   };

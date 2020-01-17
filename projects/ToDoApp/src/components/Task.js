@@ -9,24 +9,30 @@ const Task = props => {
 
   if (active) {
     return (
-      <div>
+      <div className="task">
         <p>
-          <strong style={important ? importantStyle : null}>{text}</strong> - do
-          dnia {date}
-          <button onClick={() => props.change(id)}>Zostało zrobione</button>
-          <button onClick={() => props.delete(id)}>X</button>
+          <strong style={important ? importantStyle : null}>{text}</strong>
+          <small className="date"> (Zrobić do: {date})</small>
         </p>
+        <button className="achive" onClick={() => props.change(id)}>
+          Wykonane
+        </button>
+        <button className="delete" onClick={() => props.delete(id)}>
+          Usuń
+        </button>
       </div>
     );
   } else {
     return (
-      <div>
+      <div className="task">
         <p>
-          <strong>{text}</strong> - (zrobić do dnia {date})
-          <br />
-          Wykonane w dniu: <span>{finishDate}</span>
-          <button onClick={() => props.delete(id)}>X</button>
+          <strong>{text}</strong>{" "}
+          <small className="date"> (Zrobić do: {date})</small>
+          <small className="date">(Potwierdzenie: {finishDate})</small>
         </p>
+        <button className="delete" onClick={() => props.delete(id)}>
+          Usuń
+        </button>
       </div>
     );
   }

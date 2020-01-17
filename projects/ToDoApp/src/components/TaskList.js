@@ -25,16 +25,20 @@ const TaskList = props => {
 
   return (
     <>
-      <div>
+      <div className="taskList">
         <h2>Zadania do zrobienia:</h2>
-        {activeTasks.length > 0
-          ? activeTasks
-          : "Nie masz zadań do wykonania. Zrób coś ciekawego :)"}
+        {activeTasks.length > 0 ? (
+          activeTasks
+        ) : (
+          <p className="lack">
+            Nie masz zadań do wykonania. Zrób coś ciekawego :
+          </p>
+        )}
       </div>
 
       <hr />
 
-      <div>
+      <div className="taskList">
         <h2>
           Zadania zrobione: <strong>({done.length})</strong>
         </h2>
