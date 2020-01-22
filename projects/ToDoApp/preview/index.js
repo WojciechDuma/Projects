@@ -194,7 +194,7 @@ const TaskList = props => {
           activeTasks
         ) : (
           <p className="lack">
-            Nie masz zadań do wykonania. Zrób coś ciekawego :
+            Nie masz zadań do wykonania. Zrób coś ciekawego :)
           </p>
         )}
       </div>
