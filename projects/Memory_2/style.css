@@ -1,0 +1,267 @@
+/* General */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #444;
+}
+
+/* Game */
+
+.game {
+    width: 100%;
+    min-width: 505px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.game__name {
+    margin: 0 0 50px;
+    font-family: 'Londrina Shadow', cursive;
+    font-size: 130px;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    color: red;
+}
+
+.game__name span {
+    display: inline-block;
+    animation: nameAnimation 3s ease-in-out infinite, colorAnimation 8s linear infinite;
+}
+
+.game__name span:nth-of-type(2) {
+    animation-delay: 0.5s;
+}
+
+.game__name span:nth-of-type(3) {
+    animation-delay: 1s;
+}
+
+.game__name span:nth-of-type(4) {
+    animation-delay: 1.5s;
+}
+
+.game__name span:nth-of-type(5) {
+    animation-delay: 2s;
+}
+
+.game__name span:nth-of-type(6) {
+    animation-delay: 2.5s;
+}
+
+@keyframes nameAnimation {
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes colorAnimation {
+    25% {
+        color: blue;
+    }
+
+    50% {
+        color: yellow;
+    }
+
+    75% {
+        color: green;
+    }
+}
+
+.game__option {
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.game__level {
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.game__level:hover {
+    color: red;
+}
+
+.game__level--easy,
+.game__level--hard {
+    visibility: hidden;
+}
+
+.game__level--checked {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform .6s cubic-bezier(0.5, -0.8, 0.3, 1.9);
+}
+
+.game__level--easy~.game__level--checked {
+    transform: translate(100px, -25px);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.game__level--hard~.game__level--checked {
+    transform: translate(100px, -75px);
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 15px 3px red;
+}
+
+.game__level--easy:checked~.game__level--checked {
+    transform: translate(100px, 25px);
+}
+
+.game__level--hard:checked~.game__level--checked {
+    transform: translate(100px, -25px);
+}
+
+.game__start {
+    width: 200px;
+    height: 70px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #777;
+    color: whitesmoke;
+    box-shadow: 3px 3px 7px red;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+
+.game__start--click {
+    transform: translate(3px, 3px);
+    box-shadow: 0 0 5px 1px red;
+}
+
+/* Wrapper div */
+
+.wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div {
+    flex-basis: 15%;
+    flex-grow: 1;
+    height: 33.33vh;
+    background-color: black;
+    border: 3px solid white;
+}
+
+@media (orientation: portrait) {
+    div {
+        flex-basis: 30%;
+        height: 16.66vh;
+    }
+}
+
+/* Colors Easy */
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.brown {
+    background-color: brown;
+}
+
+.yellow {
+    background-color: yellow
+}
+
+.violet {
+    background-color: violet;
+}
+
+.lightgreen {
+    background-color: lightgreen;
+}
+
+.cadetblue {
+    background-color: cadetblue;
+}
+
+.grey {
+    background-color: grey;
+}
+
+/* Colors Hard */
+
+.color_111 {
+    background-color: #111;
+}
+
+.color_222 {
+    background-color: #222;
+}
+
+.color_333 {
+    background-color: #333;
+}
+
+.color_444 {
+    background-color: #444;
+}
+
+.color_555 {
+    background-color: #555;
+}
+
+.color_666 {
+    background-color: #666;
+}
+
+.color_777 {
+    background-color: #777;
+}
+
+.color_888 {
+    background-color: #888;
+}
+
+.color_999 {
+    background-color: #999;
+}
+
+/* Color hide */
+.hidden {
+    background-color: black;
+}
+
+/* Color uncover  */
+.off {
+    background-color: #eee;
+}
+
+/* Display off */
+
+.offDisplay {
+    display: none;
+}
