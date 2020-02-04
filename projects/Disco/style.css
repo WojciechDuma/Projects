@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('bcg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    overflow: hidden;
+    font-family: Arial, serif;
+}
+
+.container {
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.key {
+    width: 100px;
+    min-width: 60px;
+    height: 100px;
+    border: 3px solid white;
+    transition: all 0.4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5px;
+}
+
+.key p {
+    font-size: 25px;
+}
+
+.playing {
+    border-color: yellow;
+    box-shadow: 0 0 10px 3px orange;
+    transform: scale(1.1);
+}
+
+.laser {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 2px;
+    height: 300%;
+    transform-origin: top;
+    animation: laser 7s ease-in-out infinite;
+}
+
+.blue {
+    background: rgba(99, 195, 231, 0.6);
+    box-shadow: 0px 0px 15px 0px rgba(99, 195, 231, 1);
+}
+
+.red {
+    background: rgba(236, 19, 65, 0.6);
+    box-shadow: 0px 0px 15px 0px rgba(236, 19, 65, 1);
+    animation-duration: 4s;
+}
+
+.purple {
+    background: rgba(204, 102, 255, 0.6);
+    box-shadow: 0px 0px 15px 0px rgba(204, 102, 255, 1);
+    animation-duration: 5s;
+}
+
+.green {
+    background: rgba(86, 212, 69, 0.6);
+    box-shadow: 0px 0px 15px 0px rgba(86, 212, 69, 1);
+    animation-duration: 6s;
+}
+
+.yellow {
+    background: rgba(229, 231, 70, 0.6);
+    box-shadow: 0px 0px 15px 0px rgba(229, 231, 70, 1);
+    animation-duration: 8s;
+}
+
+@keyframes laser {
+    0% {
+        transform: rotateZ(-80deg);
+    }
+
+    50% {
+        transform: rotateZ(80deg);
+    }
+
+    100% {
+        transform: rotateZ(-80deg);
+    }
+}
