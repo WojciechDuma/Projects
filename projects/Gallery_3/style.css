@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+}
+
+.panels {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  border: 3px solid whitesmoke;
+  overflow: hidden;
+}
+
+.panel {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  transition: flex 1s cubic-bezier(0.5, -0.1, 0.5, -0.1);
+}
+
+.panel p {
+  margin-bottom: 70px;
+  font-size: 40px;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px #000;
+  transform: translateY(500px);
+  transition: transform 1s;
+}
+
+.panel.panel-open p {
+  transform: translateY(0);
+}
+
+.panel-open {
+  flex: 10;
+}
+
+.panel_1 {
+  background-image: url("img/forest1.jpg");
+}
+
+.panel_2 {
+  background-image: url("img/forest2.jpg");
+}
+
+.panel_3 {
+  background-image: url("img/beach.jpg");
+}
+
+.panel_4 {
+  background-image: url("img/flowers.jpg");
+}
+
+.panel_5 {
+  background-image: url("img/mountains.jpg");
+}
