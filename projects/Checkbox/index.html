@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Click with shift checkbox</title>
+</head>
+
+<body>
+    <div class="list">
+        <label class="item">
+            <input type="checkbox" id="1">
+            <span class="newCheck"></span>
+            <p>Be so good they can’t ignore you.</p>
+        </label>
+        <label class="item">
+            <input type="checkbox" id="2">
+            <span class="newCheck"></span>
+            <p>Every moment is a fresh beginning. </p>
+        </label>
+        <label class="item">
+            <input type="checkbox" id="3">
+            <span class="newCheck"></span>
+            <p>Aspire to inspire before we expire.</p>
+        </label>
+        <label for="4" class="item">
+            <input type="checkbox" id="4">
+            <span class="newCheck"></span>
+            <p>Whatever you do, do it well.</p>
+        </label>
+        <label for="5" class="item">
+            <input type="checkbox" id="5">
+            <span class="newCheck"></span>
+            <p>What we think, we become.</p>
+        </label>
+        <label for="6" class="item">
+            <input type="checkbox" id="6">
+            <span class="newCheck"></span>
+            <p>Be so good they can’t ignore you.</p>
+        </label>
+        <label for="7" class="item">
+            <input type="checkbox" id="7">
+            <span class="newCheck"></span>
+            <p>Change the world by being yourself.</p>
+        </label>
+        <label for="8" class="item">
+            <input type="checkbox" id="8">
+            <span class="newCheck"></span>
+            <p>Never regret anything that made you smile.</p>
+        </label>
+        <label for="9" class="item">
+            <input type="checkbox" id="9">
+            <span class="newCheck"></span>
+            <p>Simplicity is the ultimate sophistication. </p>
+        </label>
+    </div>
+
+    <div class="explanation">
+        <div class="wrap">
+            <h2 class="title">Styling Checkbox CSS</h2>
+            <div class="content">
+                <p>1. Ukrywamy istniejący &lt;input type="checkbox"> za pomocą: <br>
+                    display: none;<br>
+                    visibility: hidden;</p>
+                <p>2. Tworzymy nowy checkbox .newCheck np. w span i stylujemy</p>
+                <p>3. input:checked~.newCheck - tu będzie wygląd po kliknięciu</p>
+                <p>4. .newCheck::after - tu stylujemy jak ma wyglądąć checkbox po kliknięciu, tworzymy jakiś znaczek,
+                    krzyżyk, fajkę, lub cokolwiek oznaczającego odznaczenie checkboxa. Domyślnie nadajemy display: none
+                </p>
+                <p>5. input:checked~.newCheck::after - tutaj dajemy display: block, czyli po kliknięciu pokaże się nasze
+                    zaznaczenie</p>
+                <p>6. .newCheck::before oraz input:checked~.newCheck::before - możemy dodać również jakiś efekt przy
+                    klikaniu</p>
+            </div>
+        </div>
+        <div class="wrap">
+            <h2 class="title">Click with shift Checkbox JS</h2>
+            <div class="content">
+                <p>1. Pobieramy wszystkie checkboxy - .querySelectorAll</p>
+                <p>2. .forEach na każdy i nadajemy nasłuchiwanie na 'click'</p>
+                <p>3. Tworzymy flagę inBetween = false</p>
+                <p>4. Tworzymy warunek, że jeżeli jest wciśnięty shift i jakiś checkbox, to iterujemy przez wszystkie
+                    checkboxy sprawdzamy jaki został wciśniety a jaki był ostatni wciśnięty i oznaczamy wszystkie
+                    pomiędzy flagą inBetween = true<p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
