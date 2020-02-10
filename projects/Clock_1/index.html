@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="clock">
+        <div class="clock__time">
+            <span>12</span>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span>7</span>
+            <span>8</span>
+            <span>9</span>
+            <span>10</span>
+            <span>11</span>
+        </div>
+
+        <div class="clock__clockFace">
+            <div class="clock__hand clock__hand--second"></div>
+            <div class="clock__hand clock__hand--minute"></div>
+            <div class="clock__hand clock__hand--hour"></div>
+        </div>
+
+        <span class="clock__centerCircle"></span>
+    </div>
+
+    <div class="clock__regulation">
+        <label>Clock Size:
+            <input type="range" min="250" max="700" value="350" class="clock__range" id="clockSize">
+        </label>
+        <label>Clock Border:
+            <input type="range" min="1" max="30" value="15" class="clock__range" id="clockBorder">
+        </label>
+        <label>Hand Size:
+            <input type="range" min="1" max="40" value="20" class="clock__range" id="clockPadding">
+        </label>
+        <label>Hand Thickness:
+            <input type="range" min="1" max="20" value="6" class="clock__range" id="handSize">
+        </label>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
