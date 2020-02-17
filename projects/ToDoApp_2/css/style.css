@@ -55,7 +55,7 @@ body {
 
 .content .content__list {
   width: 80%;
-  margin: 15px auto;
+  margin: 25px auto;
   list-style: none;
   font-size: 20px;
 }
@@ -64,19 +64,60 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 10px;
+  font-size: 25px;
 }
 
-.content .content__item--undone {
-  display: block;
-  width: 20px;
-  height: 20px;
-  border: 1px solid black;
+.content .content__item__active {
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
+  margin-right: 20px;
+  cursor: pointer;
 }
 
-.content .content__item--remove {
+.content .content__item__active--done {
+  position: relative;
+  background-color: darkgreen;
+}
+
+.content .content__item__active--done::before {
+  content: '\2713';
+  color: white;
+  position: absolute;
+  top: -3px;
+  left: 5px;
+}
+
+.content .content__item__active--undone {
+  background-color: white;
+}
+
+.content .content__item__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.content .content__item__text--done {
+  -webkit-text-decoration: line-through wavy darkgreen;
+          text-decoration: line-through wavy darkgreen;
+  color: grey;
+}
+
+.content .content__item__remove {
+  width: 30px;
+  height: 30px;
+  line-height: 20px;
+  text-align: center;
+  font-weight: bold;
   color: red;
+  cursor: pointer;
+  border: 3px solid red;
+  border-radius: 50%;
 }
 
 .addTask {

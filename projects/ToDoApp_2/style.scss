@@ -49,26 +49,66 @@ body {
 
     .content__list {
         width: 80%;
-        margin: 15px auto;
+        margin: 25px auto;
         list-style: none;
         font-size: 20px;
     }
 
     .content__item {
         display: flex;
+        align-items: center;
         margin-bottom: 10px;
+        // border: 1px solid black;
+        font-size: 25px;
 
-        &--undone {
-            display: block;
-            width: 20px;
-            height: 20px;
-            border: 1px solid black;
+        &__active {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 20px;
+            cursor: pointer;
+
+            &--done {
+                position: relative;
+                background-color: darkgreen;
+
+                &::before {
+                    content: '\2713';
+                    color: white;
+                    position: absolute;
+                    top: -3px;
+                    left: 5px;
+                }
+            }
+
+            &--undone {
+                background-color: white;
+            }
+        }
+
+        &__text {
+            flex: 1;
+
+            &--done {
+                text-decoration: line-through wavy darkgreen;
+                color: grey;
+            }
+        }
+
+        &__remove {
+            width: 30px;
+            height: 30px;
+            line-height: 20px;
+            text-align: center;
+            font-weight: bold;
+            color: red;
+            cursor: pointer;
+            border: 3px solid red;
             border-radius: 50%;
         }
 
-        &--remove {
-            color: red;
-        }
+
+
     }
 
 }
