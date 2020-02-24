@@ -40,9 +40,9 @@ function showList(list) {
 function addTask(task, key, check) {
   const doneTask = check ? done : undone;
   const content__item = `
-  <li class="content__item" data-job="task" >
+  <li class="content__item" data-job="task" key="">
     <span class="content__item__active ${doneTask}" data-job="complete" key="${key}"></span>
-    <p class="content__item__text" data-job="text" >${task}</p>
+    <p class="content__item__text" data-job="text" key="${key}">${task}</p>
     <span class="content__item__remove" data-job="remove" key="${key}">x</span>
   </li>
   `;
